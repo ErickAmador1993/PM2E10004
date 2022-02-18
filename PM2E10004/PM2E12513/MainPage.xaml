@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12513.MainPage">
+
+    
+     
+    <!--<ContentPage.ToolbarItems >
+        <ToolbarItem Text="NUEVA UBICACION"
+                     Clicked="toolbar01_Clicked"
+                     x:Name="toolbar01" ></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>-->
+    <StackLayout  Padding="5,10,5,10" >
+
+        <Label Text="Imagen" />
+
+        <Image Source="https://img2.freepng.es/20180921/gxa/kisspng-universidad-tecnolgica-de-honduras-tegucigalpa-u-clases-uth-timeline-timetoast-timelines-5ba4e28494c0d0.3323374415375325486093.jpg" x:Name="imagen" HorizontalOptions="Center" HeightRequest="70" WidthRequest="60" />
+
+        
+
+        <StackLayout Orientation="Horizontal"  BackgroundColor="White" Padding="2,2,2,2">
+        <Button Text="NuevaLat/Long" FontSize="15" FontAttributes="Bold" x:Name="btn01" Clicked="btn01_Clicked" 
+              WidthRequest="160" HeightRequest="45" 
+             CornerRadius="60" VerticalOptions="Start" HorizontalOptions ="Start" BackgroundColor   ="DarkOrange" Margin="0,3,0,3"/>
+
+            <Button Text="UbicacionesDisponibles" FontSize="15" FontAttributes="Bold" 
+            x:Name="btn02"  Clicked="btn02_Clicked"
+            WidthRequest="215" HeightRequest="45" CornerRadius="60" VerticalOptions="EndAndExpand" 
+            HorizontalOptions ="EndAndExpand" BackgroundColor="DarkOrange" Margin="0,3,0,3"/>
+
+        </StackLayout>
+        <Button Text="Tomar Foto" x:Name="btncargarimg" Clicked="btncargarimg_Clicked" />
+        <Label Text="LATITUD" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtlatitud" TextColor="Black" />
+
+        <Label Text="LONGITUD" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text"  TextColor="Black" x:Name="txtlongitud" />
+
+        <Label Text="DESCRIPCION DE UBICACION" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtdescripcion"/>
+
+        <Label Text="DESCRIPCION EXACTA" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtdcorta"/>
+
+        <Button Text="AGREGAR" x:Name="btnguardar" FontSize="15" FontAttributes="Bold" 
+          WidthRequest="220" Clicked="btnguardar_Clicked"
+         HeightRequest="50" CornerRadius="60" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="GreenYellow"/>
+
+        <Button Text="LISTA SITIOS " x:Name="ubicaciones" FontSize="15" FontAttributes="Bold" 
+         WidthRequest="220"
+         HeightRequest="50" CornerRadius="60" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="GreenYellow" Clicked="btn02_Clicked"/>
+
+    </StackLayout>
+
+
+
+
+</ContentPage>
